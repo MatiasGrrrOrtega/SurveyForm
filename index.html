@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey From</title>
+</head>
+<body>
+    <div class="container-main">
+        <header>
+            <h1 id="title">¿Quieres ser mi amigo/a?</h1>
+            <p id="description">"Busco concer gente nueva para dialogar y aprender sobre cosas que no conozco"</p>
+        </header>
+        <form id="survey-form" class="survey-form">
+            <section class="form-group">
+                <label for="name-label" id="name-label">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="number-label" id="number-label">Age:</label>
+                <input type="number" name="number" id="number" min="18" max="90" placeholder="Age" required>
+            </section>
+            <section class="form-group">
+                <div class="title-section">
+                    <p>¿Que eres?</p>
+                </div>
+                <div>
+                    <label for="masculino"><input class="input-radio" type="radio" name="sexo" id="masculino" value="hombre">Hombre</label>
+                    <label for="femenino"><input class="input-radio" type="radio" name="sexo" id="femenino" value="mujer">Mujer</label>
+                    <label for="otro"><input class="input-radio" type="radio" name="sexo" id="otro" value="otro">Otro</label>
+                </div>
+            </section>
+            <section class="form-group">
+                <div class="title-section">
+                    <p>¿Que musica te gusta?</p>
+                </div>
+                <div class="main-content">
+                    <select name="dropdown" id="dropdown" required>
+                        <option disabled selected value>Elige</option>
+                        <option value="rockandroll">Rock and Roll</option>
+                        <option value="hip-pop/rap">Hip Pop/Rap</option>
+                        <option value="reggaeton">Reggaeton</option>
+                        <option value="reggae">Reggae</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="otra-opcion">
+                    <label for="otro">Otro tipo de musica, cual?</label>
+                    <input class="input-otro" type="text" name="otro" id="otro" placeholder="Escribela">
+                </div>
+            </section>
+            <section class="form-group">
+                <div class="title-section">
+                    <p>¿Con que te gusta matar el tiempo?</p>
+                </div>
+                <div class="main-content">
+                    <label for="libro"><input class="input-checkbox" type="checkbox" name="prefer" value="libro" id="libro" >Libros</label>
+                    <label for="videojuegos"><input class="input-checkbox" type="checkbox" name="prefer" value="videojuegos" id="videojuegos" >Videojuegos</label>
+                    <label for="ejercicio"><input class="input-checkbox" type="checkbox" name="prefer" value="ejercicio" id="ejercicio" >Ejercicio</label>
+                    <label for="cocinar"><input class="input-checkbox" type="checkbox" name="prefer" value="cocinar" id="cocinar" >Cocinar</label>
+                    <label for="otro"><input class="input-checkbox" type="checkbox" name="prefer" value="otro" id="otro" >Otro</label>
+                </div>
+                <div class="otra-opcion">
+                    <label for="otro">Otro?</label>
+                    <input class="input-otro" type="text" name="otro" id="otro" placeholder="Escribela">
+                </div>
+            </section>
+            <section class="form-group">
+                <p>Comentarios:</p>
+                <textarea id="textarea" class="textarea" placeholder="Comentarios"></textarea>
+            </section>
+            <section class="form-group">
+                <button type="submit" id="submit" class="submit-button">Enviar</button>
+            </section>
+        </form>
+    </div>
+</body>
+</html>

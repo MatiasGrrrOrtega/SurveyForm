@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background-image: linear-gradient( 115deg, rgba(167, 95, 2, 0.8), rgba(247, 144, 9, 0.2) ) ,url('https://procrastinafacil.com/wp-content/uploads/2021/08/amigos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-size: 1.12em;
+    line-height: 1.4;
+}
+
+.container-main{
+    width: 100%;
+    margin: 6.125rem auto 0 auto;
+}
+
+textarea,
+button,
+select,
+input{
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    margin-top: 1rem;
+    background-color: #26ac1a;
+    color: #fff;
+}
+
+p{
+    font-size: 1.235rem;
+}
+
+select{
+    width: 100%;
+}
+
+header{
+    text-align: center;
+}
+
+header p{
+    font-style: italic;
+}
+
+/*FORM*/
+
+.survey-form{
+    background-color: rgba(14, 12, 3, 0.439);
+    padding: 1rem;
+    margin: 0.9rem;
+    border-radius: 25px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section p{
+    margin: 0.7rem 0;
+    font-size: 1.335rem;
+    font-weight: bold;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.235rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-checkbox,
+.input-radio{
+    margin-right: 0.625rem;
+    min-height: 1.20rem;
+    min-width: 1.20rem;
+}
+
+.input-otro {
+    width: 100%;
+}
+
+.textarea{
+    resize: none;
+    height: 200px;
+}
+
+.submit-button{
+    font-size: 1.2rem;
+    transition: .7s background ease;
+}
+
+.submit-button:hover{
+    background: #1f8316;
+}
+
+@media(min-width: 560px){
+    .container-main{
+        width: 590px;
+    }
+
+    .submit-button{
+        padding: 1.09rem 0;
+    }
+}
